@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<!-- Header -->
+		<header id="header">
+			<div class="nav">
+				<div class="name">
+					Fitri Khairani
+				</div>
+				<ul>
+					<li><a class="catalog" href="#catalog">Catalog</a></li>
+					<li><a href="#header">Profile</a></li>
+				</ul>
+			</div>
+		</header>
+	<!-- end Header -->
+
+	<!-- Bio -->
+		<section>
+			<img src="bg1.jpg" alt="" width="280">
+			<div class="text">
+				<h3 align="center">My Biodata</h3>
+				<p>Nama saya Fitri khairani, dengan NIM 5203140008. Saya tinggal di Jl. Let Umar Baki Lk. VII. Kel. Sukarami. Kec Binjai Barat,
+					<ul>
+						<li>Sd : SD negri 050586</li>
+						<li>Smp : SMP Negri 2 Binjai Langkat</li>
+						<li>Smk : SMK Putra Anda Binjai</li>
+						<li>Kuliah : Universitas Negeri Medan, dengan jurusan Pendidikan Tata Busana</li>
+					</ul>
+				</p> 
+			</div>
+			
+		</section>
+	<!-- end Bio -->
+
+	<!-- Catalog -->
+		<content id="catalog">
+			<h1>Catalog</h1>
+		</content>
+	<!-- end Catalog -->
+
+	<!-- Footer -->
+		<footer>
+			<h2 align="center">Copyright@ Fitri Khairani 2021</h2>
+		</footer>
+	<!-- end Footer -->
+<script>
+	let content = document.querySelector('content');
+	for(let i = 1; i <= 30; i++){
+		let pict = document.createElement('img');
+		pict.setAttribute('src', `desain/${i}.jpg`);
+		content.appendChild(pict);
+	}
+</script>
+
+</body>
+</html>
+
+
+
