@@ -109,6 +109,7 @@ footer{
 /*Responsive Mobile*/
 @media (max-width: 672px){
 	body{
+		overflow-x: hidden;
 		grid-template-columns: 1fr;
 		grid-template-rows: fr1 1fr 2fr 1fr;
 	}
