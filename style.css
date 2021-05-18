@@ -1,18 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 :root{
 	--main-size: 1.35em;
-	--size-font: 1.1em;
+	--size-font: 1.3em;
 	--font-color: #fff;
 }
 *{
 	scroll-behavior: smooth;
 }
 body{
-
+	font-family: 'Open Sans Condensed', sans-serif;
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	height: 100%;
-	font-family: sans-serif;
 	background: grey;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -39,13 +40,11 @@ header .nav {
 	display: flex;
 }
 header .nav .name{
+	font-family: 'Pattaya', sans-serif;
 	font-size: var(--main-size);
 	text-align: center;
 	align-self: center;
 	flex-grow: 2;
-}
-.catalog{
-
 }
 header .nav  ul{
 	flex-grow: 3;
@@ -79,6 +78,8 @@ section{
 	flex-grow: 1;
 }*/
 section img{
+	box-shadow: 0 0 3px rgba(0,0,0,.5);
+	border: 2px solid #eee;
 	margin: auto;
 }
 section p{
@@ -106,12 +107,20 @@ footer{
 	text-shadow: 3px 3px 1px rgba(0,0,0,.1);
 }
 /*Responsive Mobile*/
-/*@media (max-width: 672px){
+@media (max-width: 672px){
 	body{
-		grid-template-areas: 
-		'header header header'
-		'content content content'
-		'footer footer footer'
-		;
+		grid-template-columns: 1fr;
+		grid-template-rows: fr1 1fr 2fr 1fr;
 	}
-}*/
+	header .nav .name{
+	font-family: 'Pattaya', sans-serif;
+	font-size: 1.7em;
+}
+	header ul li{
+		left: -20px;
+	}
+	section{
+		grid-template-columns: 1fr;
+}
+
+}
